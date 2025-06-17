@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyumbani Haven - Professional Home Based Care Solutions</title>
+    <meta name="description" content="Professional home-based healthcare services in Nairobi. Licensed nurses, physiotherapists, and counselors providing palliative care, elderly care, and specialized medical support at home.">
+    <meta name="keywords" content="home healthcare, palliative care, elderly care, nursing services, physiotherapy, Nairobi, Kenya">
+    
+    <!-- External Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Nyumbani Haven</h1>
+                    <p>Professional Home Care</p>
+                </div>
+            </div>
+            <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="cta-nav">Book Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Professional Home-Based Healthcare Solutions</h1>
+                <p class="tagline">Because Healing Begins at Home</p>
+                <p class="hero-description">Providing dignified, clinical-grade healthcare services in the comfort of your home. Our licensed professionals specialize in palliative care, elderly support, maternal health, and specialized pediatric care including cerebral palsy management.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3 class="counter">200</h3>
+                        <p>Families Served</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Care Available</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter">100</h3>
+                        <p>Licensed Staff</p>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        Schedule Consultation
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Our Services
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <div class="hero-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Licensed Healthcare Professionals</h3>
+                    <p>Registered nurses, certified physiotherapists, and licensed counselors bringing hospital-quality care to your home</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Care Services</h2>
+                <p>Professional home-based healthcare solutions tailored to meet your family's specific medical and comfort needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="palliative">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Palliative & Cancer Care</h3>
+                    <p>Specialized pain management, symptom control, and comfort care for patients with serious illnesses. Our team provides comprehensive support for both patients and families during challenging times.</p>
+                    <span class="service-badge">24/7 Support Available</span>
+                </div>
+                <div class="service-card" data-service="elderly">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Elderly Care Services</h3>
+                    <p>Comprehensive daily living assistance, medication management, safety monitoring, and companionship services for elderly individuals who prefer to age in place.</p>
+                    <span class="service-badge">Licensed Caregivers</span>
+                </div>
+                <div class="service-card" data-service="dementia">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Dementia & Memory Care</h3>
+                    <p>Specialized care protocols for patients with Alzheimer's, dementia, and other cognitive disorders. Focus on maintaining dignity, safety, and quality of life.</p>
+                    <span class="service-badge">Specialized Training</span>
+                </div>
+                <div class="service-card" data-service="maternal">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Maternal & Pediatric Care</h3>
+                    <p>Prenatal and postnatal support services, newborn care, and specialized support for children with special needs including cerebral palsy and developmental delays.</p>
+                    <span class="service-badge">Certified Specialists</span>
+                </div>
+                <div class="service-card" data-service="physiotherapy">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Home Physiotherapy</h3>
+                    <p>Licensed physiotherapists providing rehabilitation services, mobility training, pain management, and recovery support in the comfort of your home environment.</p>
+                    <span class="service-badge">Licensed Therapists</span>
+                </div>
+                <div class="service-card" data-service="mental-health">
+                    <div class="service-icon">
+                        <i class="fas fa-head-side-brain"></i>
+                    </div>
+                    <h3>Mental Health Support</h3>
+                    <p>Licensed counseling psychologists providing individual and family therapy, grief counseling, and mental wellness support for patients and caregivers.</p>
+                    <span class="service-badge">Licensed Psychologists</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>About Nyumbani Haven</h2>
+                    <p class="lead">Nyumbani Haven represents a new standard in home-based healthcare delivery. We bridge the gap between institutional medical care and the comfort of home by providing clinical-grade services with personalized attention.</p>
+                    <p>Our multidisciplinary team of licensed healthcare professionals is committed to delivering evidence-based care while maintaining the dignity, comfort, and individual preferences of each patient.</p>
+                    
+                    <div class="founder-card">
+                        <h4>Founder & Clinical Director: Leah Nyambura Ngugi</h4>
+                        <p>With extensive clinical experience across hospital settings and community health programs, Leah established Nyumbani Haven to address the growing need for professional home-based healthcare in Kenya. Her vision combines clinical excellence with compassionate care delivery.</p>
+                        <div class="credentials">
+                            <span class="credential-badge">Registered Nurse</span>
+                            <span class="credential-badge">Palliative Care Specialist</span>
+                            <span class="credential-badge">5+ Years Experience</span>
+                            <span class="credential-badge">Community Health Advocate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <h3 class="counter">200</h3>
+                            <p>Patients Successfully Treated</p>
+                        </div>
+                        <div class="about-stat">
+                            <h3 class="counter">98</h3>
+                            <p>Patient Satisfaction Rate</p>
+                        </div>
+                        <div class="about-stat">
+                            <h3>24/7</h3>
+                            <p>Emergency Support</p>
+                        </div>
+                        <div class="about-stat">
+                            <h3 class="counter">5</h3>
+                            <p>Years Clinical Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Professional Healthcare Team</h2>
+                <p>All team members are licensed, certified, and undergo continuous professional development to ensure the highest standards of care</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <h3>Registered Nurses</h3>
+                    <p>Licensed RNs with specialized training in home healthcare, medication management, wound care, and chronic disease management. All nurses maintain current certifications and participate in ongoing education.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3>Licensed Physiotherapists</h3>
+                    <p>Certified physical therapists specializing in home-based rehabilitation, mobility training, and therapeutic exercise programs. Expert in adaptive equipment and home safety assessments.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-head-side-brain"></i>
+                    </div>
+                    <h3>Clinical Psychologists</h3>
+                    <p>Licensed mental health professionals providing individual therapy, family counseling, grief support, and behavioral interventions. Specialized in medical psychology and chronic illness adaptation.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Specialized Care Coordinators</h3>
+                    <p>Certified healthcare coordinators managing complex care plans, family communication, and interdisciplinary collaboration to ensure seamless care delivery and optimal outcomes.</p>
+                </div>
+            </div>
+            
+            <div class="recruitment-section">
+                <h3>Join Our Professional Healthcare Team</h3>
+                <p>We are seeking qualified healthcare professionals who share our commitment to excellence in home-based care. Competitive compensation, professional development opportunities, and the satisfaction of making a meaningful difference in patients' lives.</p>
+                <a href="#contact" class="btn btn-white">
+                    <i class="fas fa-user-plus"></i>
+                    View Career Opportunities
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Schedule Your Consultation</h2>
+                    <p class="lead">Contact our team to discuss your healthcare needs and develop a personalized care plan. We offer free initial consultations to assess your requirements and explain our services.</p>
+                    
+                    <div class="contact-item" data-action="phone">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-item-content">
+                            <h4>Primary Contact</h4>
+                            <p>0722 912 811</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" data-action="email">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <h4>Email Correspondence</h4>
+                            <p>ngugiliyah@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Service Area</h4>
+                            <p>Nairobi and Greater Metropolitan Area</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" data-action="whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="contact-item-content">
+                            <h4>WhatsApp Consultation</h4>
+                            <p>0722 912 811</p>
+                        </div>
+                    </div>
+
+                    <div class="emergency-notice">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        24/7 Emergency Support Available for Existing Patients
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Request Professional Consultation</h3>
+                    <form id="consultationForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter patient or family member name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Contact Number *</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Primary contact number">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAddress">Email Address *</label>
+                            <input type="email" id="emailAddress" name="emailAddress" required placeholder="Email for correspondence">
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceType">Required Service *</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select a service category</option>
+                                <option value="palliative">Palliative & Cancer Care</option>
+                                <option value="elderly">Elderly Care Services</option>
+                                <option value="dementia">Dementia & Memory Care</option>
+                                <option value="maternal">Maternal & Pediatric Care</option>
+                                <option value="physiotherapy">Home Physiotherapy</option>
+                                <option value="mental-health">Mental Health Support</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="careDetails">Care Requirements & Medical History</label>
+                            <textarea id="careDetails" name="careDetails" placeholder="Please provide details about the patient's condition, current care needs, medical history, and any specific requirements or concerns..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="urgency">Care Urgency</label>
+                            <select id="urgency" name="urgency">
+                                <option value="routine">Routine - Within 1 week</option>
+                                <option value="priority">Priority - Within 2-3 days</option>
+                                <option value="urgent">Urgent - Within 24 hours</option>
+                                <option value="emergency">Emergency - Immediate response needed</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nyumbani Haven</h3>
+                    <p>Professional home-based healthcare services delivered with clinical excellence and compassionate care. Licensed, certified, and committed to improving quality of life for patients and families across Nairobi.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Clinical Services</h3>
+                    <a href="#services">Palliative & Cancer Care</a>
+                    <a href="#services">Elderly Care Services</a>
+                    <a href="#services">Dementia & Memory Care</a>
+                    <a href="#services">Maternal & Pediatric Care</a>
+                    <a href="#services">Home Physiotherapy</a>
+                    <a href="#services">Mental Health Support</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Professional Resources</h3>
+                    <a href="#about">About Our Practice</a>
+                    <a href="#team">Healthcare Team</a>
+                    <a href="#contact">Schedule Consultation</a>
+                    <a href="#contact">Career Opportunities</a>
+                    <a href="#contact">Emergency Support</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> Primary: 0722 912 811</p>
+                    <p><i class="fas fa-envelope"></i> Email: ngugiliyah@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Emergency Support</p>
+                    <p><i class="fas fa-shield-alt"></i> Licensed & Insured</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nyumbani Haven Professional Home Care Services. All rights reserved. | Founder: Leah Nyambura Ngugi, RN | Licensed Healthcare Provider</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
